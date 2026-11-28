@@ -1,0 +1,23 @@
+/* Estilos base mínimos. El CSS global completo es la tarea #2 (Abi6238)
+   y el responsive es la #4 (HugoPerez12). Cada página puede añadir su
+   propio CSS en un archivo aparte (p. ej. css/inicio.css). */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+
+.cabecera .contenedor { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem; }
+.menu ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem; }
+.menu a.activo { font-weight: bold; }
+
+main { flex: 1; }
+.pie { text-align: center; padding: 1rem 0; }
